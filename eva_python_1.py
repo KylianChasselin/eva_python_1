@@ -19,9 +19,9 @@ def motAtrouver(mot_1,mot_joueur):
 
 def mot_vrai(mot_1,mot_joueur):
     for i in range (1,7):
-        if mot_joueur[i-1] == mot_1 :
+        if mot_joueur == mot_1 :
             print("you win")
-        if mot_joueur[i-1] != mot_1 :
+        if mot_joueur != mot_1 :
             print("you loose")
     return 
 
