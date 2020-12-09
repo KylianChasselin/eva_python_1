@@ -80,33 +80,34 @@ def mot_vrai (mot_1,mot_joueur):
     
 def lettre_bonne (mot_1, mot_joueur):
     for i in range (1,7):
-        if mot_joueur[0] = mot_1[0]:
-            print(Fore.RED + 'some red text', end=" ")
-        if mot_joueur[1] = mot_1[1]:
-            print(Fore.RED + 'some red text', end=" ")
-        if mot_joueur[2] = mot_1[2]:
-            print(Fore.RED + 'some red text', end=" ")
-        if mot_joueur[3] = mot_1[3]:
-            print(Fore.RED + 'some red text', end=" ")
-        if mot_joueur[4] = mot_1[4]:
-            print(Fore.RED + 'some red text', end=" ")
-        if mot_joueur[5] = mot_1[5]:
-            print(Fore.RED + 'some red text', end=" ")
+        if mot_joueur[0] == mot_1[0]:
+            print(Back.RED + mot_joueur[0], end=" ")
+        if mot_joueur[1] == mot_1[1]:
+            print(Back.RED + mot_joueur[1], end=" ")
+        if mot_joueur[2] == mot_1[2]:
+            print(Back.RED + mot_joueur[2], end=" ")
+        if mot_joueur[3] == mot_1[3]:
+            print(Back.RED + mot_joueur[3], end=" ")
+        if mot_joueur[4] == mot_1[4]:
+            print(Back.RED + mot_joueur[4], end=" ")
+        if mot_joueur[5] == mot_1[5]:
+            print(Back.RED + mot_joueur[5], end=" ")
+    return lettre_bonne
 
 def lettre_pas_presente (mot_1, mot_joueur):
     for i in range (1,7):
         if mot_joueur[0] != mot_1[0]:
-            print(Fore.blue + 'some blue text', end=" ")
+            print(Back.blue + mot_joueur[0], end=" ")
         if mot_joueur[1] != mot_1[1]:
-            print(Fore.blue + 'some blue text', end=" ")
+            print(Back.blue + mot_joueur[1], end=" ")
         if mot_joueur[2] != mot_1[2]:
-            print(Fore.blue + 'some blue text', end=" ")
+            print(Back.blue + mot_joueur[2], end=" ")
         if mot_joueur[3] != mot_1[3]:
-            print(Fore.blue + 'some blue text', end=" ")
+            print(Back.blue + mot_joueur[3], end=" ")
         if mot_joueur[4] != mot_1[4]:
-            print(Fore.blue + 'some blue text', end=" ")
+            print(Back.blue + mot_joueur[4], end=" ")
         if mot_joueur[5] != mot_1[5]:
-            print(Fore.blue + 'some blue text', end=" ")
+            print(Back.blue + mot_joueur[5], end=" ")
     return lettre_pas_presente
 
 # tableaux : 
