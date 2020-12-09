@@ -1,7 +1,11 @@
 pip install colorama
 
+from colorama import init
+init()
+from colorama import Fore, Back, Style
 
 #ESSAI 2 :
+
 
 
 from colorama import init
@@ -71,7 +75,6 @@ mot_vrai(mot_1,mot_joueur)
 lettre_bonne(mot_1,mot_joueur)
 lettre_pas_presente(mot_1,mot_joueur)
 
-print(motAtrouver)
-
+print(motAtrouver(mot_1,mot_joueur))
 
 input()
